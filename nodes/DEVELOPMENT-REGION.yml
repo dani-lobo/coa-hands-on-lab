@@ -1,0 +1,64 @@
+steps:
+  REGION-d15f39f1-0d76-47bc-9f2a-d95598a509a0:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationID: ""
+      locationName: DEVELOPMENT
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: eaf4a74d-6640-4641-892b-ad1ab0ff797e
+              stepCounter: d15f39f1-0d76-47bc-9f2a-d95598a509a0
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: eb64e211-7652-429b-90a7-402208b7e296
+              stepCounter: d15f39f1-0d76-47bc-9f2a-d95598a509a0
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7885cff3-b4af-4016-8f26-138206304015
+              stepCounter: d15f39f1-0d76-47bc-9f2a-d95598a509a0
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('DEVELOPMENT', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: d15f39f1-0d76-47bc-9f2a-d95598a509a0
